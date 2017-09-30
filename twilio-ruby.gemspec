@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
   spec.rdoc_options = ['--line-numbers', '--inline-source', '--title', 'twilio-ruby', '--main', 'README.md']
 
   spec.add_dependency('libxml-ruby', '>= 2.0', '< 4.0') if RUBY_PLATFORM != 'java'
-  spec.add_dependency('libxml-jruby', '~> 1.0') if RUBY_PLATFORM == 'java'
+  spec.add_dependency('nokogiri', '~> 1.8.1') if RUBY_PLATFORM == 'java'
   spec.add_dependency('jwt', '~> 1.5')
   spec.add_dependency('faraday', '~>0.9')
   spec.add_dependency('jruby-openssl') if RUBY_PLATFORM == 'java'
